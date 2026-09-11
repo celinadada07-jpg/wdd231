@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 231 | Course Home Page</title>
+
+    <meta name="description" content="Celina Gomba's WDD 231 Web Frontend Development I course home page.">
+    <meta name="author" content="Celina Gomba">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="profile">
+            <img src="images/logo.svg" alt="WDD 231 logo">
+            <span>Celina Gomba</span>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <!-- ===== NAVIGATION ===== -->
+        <nav id="nav-menu">
+            <a href="index.html" class="active">Home</a>
+            <a href="#" >Chamber</a>
+            <a href="#" >Final</a>
+        </nav>
+    </header>
+
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <h1>Home</h1>
+
+        <!-- ABOUT ME SECTION -->
+        <section class="about">
+            <h2>About Me</h2>
+
+            <p>
+                Welcome to my WDD 231 course home page. This page
+                contains information about my studies, courses,
+                and progress in web frontend development.
+            </p>
+        </section>
+
+
+        <!-- COURSE CERTIFICATE SECTION -->
+        <section class="certificate">
+
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <!-- COURSE FILTER BUTTONS -->
+            <div class="course-buttons">
+                <button id="all-courses" type="button">
+                    All Courses
+                </button>
+
+                <button id="wdd-courses" type="button">
+                    WDD Courses
+                </button>
+
+                <button id="cse-courses" type="button">
+                    CSE Courses
+                </button>
+            </div>
+
+            <!-- TOTAL CREDITS -->
+            <p class="credits">
+                Total Credits:
+                <span id="total-credits">0</span>
+            </p>
+
+            <!-- DYNAMIC COURSE CARDS -->
+            <div id="course-container">
+                <!-- JavaScript will place course cards here -->
+            </div>
+
+        </section>
+
+
+        <!-- COURSE INFORMATION SECTION -->
+        <section class="information">
+
+            <h2>Course Information</h2>
+
+            <p>
+                WDD 231 Web Frontend Development I: 
+                It focuses on HTML, CSS, JavaScript, responsive design,
+                accessibility, and modern web development.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ===== FOOTER ===== -->
+     <footer>
+    <div class="social-links">
+
+        <a href="https://github.com/celinadada07-jpg"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="GitHub">
+            <img src="images/github.png" alt="GitHub">
+            <span>GitHub</span>
+        </a>
+
+        <a href="https://www.linkedin.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn">
+            <img src="images/linkedin.png" alt="LinkedIn">
+            <span>LinkedIn</span>
+        </a>
+
+    </div>
+
+    <p>
+        &copy; <span id="currentyear"></span> Celina Gomba<br>
+        Nigeria
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>

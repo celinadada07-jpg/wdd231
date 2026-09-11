@@ -1,0 +1,56 @@
+/* ---------- Larger Screen Styles ---------- */
+
+@media screen and (min-width: 700px) {
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: -45px;
+    }
+
+    nav a {
+        padding: 1rem 1.5rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    /* About Me and Student Photo style layout */
+    .about {
+        min-height: 200px;
+    }
+
+    /* Course cards */
+    #course-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .course-buttons {
+        justify-content: center;
+    }
+
+    .course-buttons button {
+        flex: 0 1 180px;
+    }
+
+    section {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    main {
+        padding: 2rem 3rem;
+    }
+
+    #course-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

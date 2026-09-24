@@ -1,0 +1,143 @@
+/* ==========================================
+   PORT HARCOURT CHAMBER OF COMMERCE
+   LARGE SCREEN STYLES
+   ========================================== */
+
+@media screen and (min-width: 38rem) {
+
+    /* ===============================
+       HEADER
+       =============================== */
+
+    .header-content {
+        padding: 1rem 0;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .primary-nav {
+        position: static;
+        display: flex;
+        width: auto;
+        background-color: transparent;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    .primary-nav.open {
+        flex-direction: row;
+    }
+
+    .primary-nav a {
+        border-top: none;
+        padding: 0.7rem 0.9rem;
+        border-radius: 5px;
+    }
+
+    .primary-nav a:hover,
+    .primary-nav a:focus {
+        background-color: #176b87;
+    }
+
+    /* ===============================
+       PAGE HEADING
+       =============================== */
+
+    .page-heading {
+        padding: 3rem 0 1.5rem;
+    }
+
+    .page-heading h1 {
+        font-size: 2.5rem;
+    }
+
+    /* ===============================
+       DIRECTORY CONTROLS
+       =============================== */
+
+    .directory-controls {
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+    }
+
+    /* ===============================
+       DIRECTORY GRID
+       =============================== */
+
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .member-card {
+        padding: 1.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .member-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+    }
+
+    .member-card img {
+        width: 170px;
+        height: 110px;
+    }
+
+    /* ===============================
+       LIST VIEW
+       =============================== */
+
+    .members-list .member-card {
+        grid-template-columns: 1fr;
+        padding: 1rem 1.25rem;
+    }
+
+    /* ===============================
+       FOOTER
+       =============================== */
+
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+        text-align: left;
+    }
+
+    .footer-social {
+        justify-content: flex-start;
+    }
+
+    .footer-development {
+        border-top: none;
+        border-left: 1px solid rgba(255, 255, 255, 0.25);
+        padding-top: 0;
+        padding-left: 1.5rem;
+    }
+}
+
+
+/* ==========================================
+   EXTRA LARGE SCREENS
+   ========================================== */
+
+@media screen and (min-width: 64rem) {
+
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .site-logo img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .site-logo span {
+        font-size: 1.05rem;
+    }
+
+    .page-heading h1 {
+        font-size: 2.8rem;
+    }
+}

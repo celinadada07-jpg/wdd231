@@ -1,0 +1,75 @@
+[
+    {
+        "name": "Garden City Business Solutions",
+        "address": "15 Aba Road, Port Harcourt, Rivers State",
+        "phone": "+234 803 456 7890",
+        "website": "https://www.example.com",
+        "image": "garden-city.jpg",
+        "membership": 3,
+        "description": "A business consulting company providing professional solutions and support for growing businesses in Port Harcourt."
+    },
+    {
+        "name": "Rivers Technology Hub",
+        "address": "28 Trans-Amadi Industrial Layout, Port Harcourt, Rivers State",
+        "phone": "+234 805 234 5678",
+        "website": "https://www.example.com",
+        "image": "rivers-tech.jpg",
+        "membership": 3,
+        "description": "A technology organization supporting digital innovation, software development, and technology education."
+    },
+    {
+        "name": "Niger Delta Logistics",
+        "address": "42 Woji Road, Port Harcourt, Rivers State",
+        "phone": "+234 806 345 6789",
+        "website": "https://www.example.com",
+        "image": "niger-delta-logistics.jpg",
+        "membership": 2,
+        "description": "A logistics and transportation company providing reliable delivery and business transportation services."
+    },
+    {
+        "name": "Port Harcourt Creative Studio",
+        "address": "7 Stadium Road, Port Harcourt, Rivers State",
+        "phone": "+234 807 456 7890",
+        "website": "https://www.example.com",
+        "image": "creative-studio.jpg",
+        "membership": 2,
+        "description": "A creative agency offering branding, graphic design, photography, and digital marketing services."
+    },
+    {
+        "name": "Rivers Hospitality Group",
+        "address": "18 Peter Odili Road, Port Harcourt, Rivers State",
+        "phone": "+234 809 567 8901",
+        "website": "https://www.example.com",
+        "image": "hospitality-group.jpg",
+        "membership": 1,
+        "description": "A hospitality organization providing accommodation, events, and customer-focused hospitality services."
+    },
+    {
+        "name": "Sunrise Fashion House",
+        "address": "31 Rumuola Road, Port Harcourt, Rivers State",
+        "phone": "+234 810 678 9012",
+        "website": "https://www.example.com",
+        "image": "sunrise-fashion.jpg",
+        "membership": 1,
+        "description": "A local fashion business creating contemporary clothing and fashion products for customers in Rivers State."
+    },
+    {
+        "name": "Green Energy Services",
+        "address": "12 Old GRA, Port Harcourt, Rivers State",
+        "phone": "+234 811 789 0123",
+        "website": "https://www.example.com",
+        "image": "green-energy.jpg",
+        "membership": 2,
+        "description": "A renewable energy company providing solar energy solutions and energy consultation services."
+    },
+    {
+        "name": "First Choice Printing Press",
+        "address": "9 Ikwerre Road, Port Harcourt, Rivers State",
+        "phone": "+234 812 890 1234",
+        "website": "https://www.example.com",
+        "image": "printing-press.jpg",
+        "membership": 1,
+        "description": "A printing company offering business cards, banners, brochures, flyers, and other professional printing services."
+    }
+]
+

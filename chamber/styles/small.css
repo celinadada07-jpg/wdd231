@@ -1,0 +1,356 @@
+/* ==========================================
+   PORT HARCOURT CHAMBER OF COMMERCE
+   SMALL SCREEN STYLES
+   ========================================== */
+
+
+/* ==========================================
+   GENERAL RESET
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2933;
+    background-color: #f5f7f9;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #075985;
+}
+
+
+/* ==========================================
+   HEADER
+   ========================================== */
+
+.site-header {
+    background-color: #0f3d56;
+    color: white;
+}
+
+.header-content {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.site-logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.site-logo span {
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+
+
+/* ==========================================
+   MOBILE MENU BUTTON
+   ========================================== */
+
+.menu-button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+}
+
+
+/* ==========================================
+   NAVIGATION
+   ========================================== */
+
+.primary-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0f3d56;
+    z-index: 1000;
+}
+
+.primary-nav.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.primary-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.9rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus {
+    background-color: #176b87;
+}
+
+.primary-nav a.active {
+    background-color: #176b87;
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   PAGE HEADING
+   ========================================== */
+
+.page-heading {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0 1rem;
+    text-align: center;
+}
+
+.page-heading h1 {
+    margin: 0 0 0.5rem;
+    color: #0f3d56;
+    font-size: 2rem;
+}
+
+.page-heading p {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+
+/* ==========================================
+   DIRECTORY SECTION
+   ========================================== */
+
+.directory-section {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+
+/* ==========================================
+   GRID / LIST CONTROLS
+   ========================================== */
+
+.directory-controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.view-button {
+    border: 2px solid #0f3d56;
+    background-color: white;
+    color: #0f3d56;
+    padding: 0.65rem 1.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.view-button:hover,
+.view-button:focus {
+    background-color: #176b87;
+    color: white;
+}
+
+.view-button.active-view {
+    background-color: #0f3d56;
+    color: white;
+}
+
+
+/* ==========================================
+   MEMBER GRID
+   ========================================== */
+
+.members-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+
+/* ==========================================
+   MEMBER CARD
+   ========================================== */
+
+.member-card {
+    background-color: white;
+    border: 1px solid #d7dee3;
+    border-radius: 10px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.member-card img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+}
+
+.member-information h2 {
+    color: #0f3d56;
+    font-size: 1.25rem;
+    margin: 0 0 0.75rem;
+}
+
+.member-information p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+}
+
+.member-information a {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   LIST VIEW
+   ========================================== */
+
+.members-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.members-list .member-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.members-list .member-card img {
+    display: none;
+}
+
+.members-list .member-information h2 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.members-list .member-information p {
+    margin: 0.2rem 0;
+}
+
+.members-list .member-information a {
+    margin-top: 0.25rem;
+}
+
+
+/* ==========================================
+   ERROR MESSAGE
+   ========================================== */
+
+.error-message {
+    background-color: white;
+    border-left: 5px solid #b42318;
+    padding: 1rem;
+    color: #7a1c14;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.site-footer {
+    background-color: #0f3d56;
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.footer-contact h2 {
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+
+.footer-contact p {
+    margin: 0.25rem 0;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+    text-decoration: underline;
+}
+
+.footer-development {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding-top: 1rem;
+}
+
+.footer-development p {
+    margin: 0.25rem 0;
+}
+
+
+/* ==========================================
+   ACCESSIBILITY
+   ========================================== */
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #f4c95d;
+    outline-offset: 3px;
+}

@@ -1,0 +1,384 @@
+/* ---------- General Styles ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    background-color: #f5f5f5;
+}
+
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1f3c5b;
+    color: white;
+    padding: 1rem;
+}
+
+/* ---------- Header ---------- */
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+}
+
+.profile span {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+#menu-button {
+    display: block;
+    margin-left: auto;
+    margin-top: -45px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ---------- Navigation ---------- */
+
+nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #315d82;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section h2 {
+    margin: 0;
+    padding: 0.8rem;
+    background-color: #1f3c5b;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+section p {
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+/* ---------- Course Buttons ---------- */
+
+.course-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.course-buttons button {
+    flex: 1;
+    min-width: 100px;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.course-buttons button:hover {
+    background-color: #bbb;
+}
+
+/* ---------- Course Cards ---------- */
+
+#course-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 1rem;
+}
+
+.course-card {
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.course-card.completed {
+    background-color: #d8f3dc;
+}
+
+.course-card.incomplete {
+    background-color: #eeeeee;
+}
+
+.credits {
+    font-weight: 700;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #1f3c5b;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   HOME PAGE
+   SMALL SCREEN STYLES
+   ========================================== */
+
+/* HERO */
+
+.hero {
+    position: relative;
+    min-height: 420px;
+    overflow: hidden;
+    background-color: #0f3d56;
+}
+
+.hero img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.48);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.25rem;
+}
+
+.hero-content h1 {
+    max-width: 800px;
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    max-width: 700px;
+    margin: 0 0 1.5rem;
+    font-size: 1rem;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #f4b942;
+    color: #102a43;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.85rem 1.4rem;
+    border-radius: 6px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: white;
+    color: #0f3d56;
+}
+
+
+/* HOME SECTIONS */
+
+.home-section {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+}
+
+.home-section > h2 {
+    color: #0f3d56;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* EVENTS */
+
+.events-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.event-card {
+    background-color: white;
+    border: 1px solid #d7dee3;
+    border-radius: 10px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.event-card h3 {
+    color: #0f3d56;
+    margin-bottom: 0.5rem;
+}
+
+.event-date {
+    color: #176b87;
+    font-weight: 700;
+}
+
+
+/* WEATHER */
+
+.weather-section {
+    background-color: #eaf4f7;
+    max-width: none;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.weather-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.weather-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.weather-card h3 {
+    color: #0f3d56;
+    margin-top: 0;
+}
+
+
+/* MEMBER SPOTLIGHTS */
+
+.spotlights-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background-color: white;
+    border: 1px solid #d7dee3;
+    border-radius: 10px;
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.spotlight-card img {
+    width: 140px;
+    height: 90px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+}
+
+.spotlight-card h3 {
+    color: #0f3d56;
+    margin-bottom: 0.75rem;
+}
+
+.spotlight-card p {
+    margin: 0.4rem 0;
+}
+
+.membership-gold {
+    color: #9a6700;
+    font-weight: 700;
+}
+
+.membership-silver {
+    color: #5f6b73;
+    font-weight: 700;
+}
+
+body {
+    background-color: pink !important;
+}

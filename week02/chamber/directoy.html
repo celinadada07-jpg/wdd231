@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Port Harcourt Chamber of Commerce | Directory</title>
+
+    <meta name="description" content="Discover businesses and organizations that are members of the Port Harcourt Chamber of Commerce.">
+    <meta name="author" content="Celina Gomba">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Port Harcourt Chamber of Commerce | Directory">
+    <meta property="og:description" content="Explore businesses and organizations that are members of the Port Harcourt Chamber of Commerce.">
+    <meta property="og:image" content="https://celinadada07-jpg.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://celinadada07-jpg.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/larger.css">
+
+    <!-- JavaScript -->
+    <script src="js/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="profile">
+            <img src="images/logo.png" alt="Port Harcourt Chamber of Commerce logo">
+            <div>
+                <h1>Port Harcourt</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html" class="active">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Chamber Directory</h2>
+
+        <div class="view-buttons">
+            <button id="grid-button">Grid</button>
+            <button id="list-button">List</button>
+        </div>
+
+        <section id="members" class="grid">
+            <!-- Business members will be added here using JavaScript -->
+        </section>
+    </main>
+    
+
+    <footer>
+        
+        <div class="contact">
+            <h3>Port Harcourt Chamber of Commerce</h3>
+            <p>Port Harcourt, Rivers State, Nigeria</p>
+            <p>Email: info@portharcourchamber.org</p>
+            <p>Phone: +234 800 000 0000</p>
+        </div>
+
+        <div class="development">
+            <p>&copy; <span id="currentyear"></span> Port Harcourt Chamber of Commerce</p>
+            <p>Celina Gomba | WDD 231</p> 
+            <p>Last Modified: <span id="lastmodified"></span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

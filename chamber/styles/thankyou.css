@@ -1,0 +1,227 @@
+/* ==========================================
+   PORT HARCOURT CHAMBER OF COMMERCE
+   THANK YOU PAGE
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7f9;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========================================
+   HEADER
+   ========================================== */
+
+.site-header {
+    background-color: #0f3d56;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.header-top {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-link {
+    display: block;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+#menu-button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+}
+
+/* ==========================================
+   NAVIGATION
+   ========================================== */
+
+#primary-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #0f3d56;
+    text-align: center;
+}
+
+#primary-nav.open {
+    display: flex;
+}
+
+#primary-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 600;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#primary-nav a:hover,
+#primary-nav a:focus,
+#primary-nav a.active {
+    background-color: #176b87;
+}
+
+/* ==========================================
+   MAIN CONTENT
+   ========================================== */
+
+main {
+    flex: 1;
+}
+
+.thank-you {
+    width: 92%;
+    max-width: 850px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.thank-you h1 {
+    color: #0f3d56;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+.thank-you > p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* ==========================================
+   APPLICATION DETAILS
+   ========================================== */
+
+#application-details {
+    text-align: left;
+    background-color: #f5f7f9;
+    border-left: 5px solid #176b87;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#application-details h2 {
+    margin-top: 0;
+    color: #0f3d56;
+    font-size: 1.5rem;
+}
+
+#application-details p {
+    line-height: 1.6;
+    margin: 0.8rem 0;
+    overflow-wrap: anywhere;
+}
+
+#application-details strong {
+    color: #0f3d56;
+}
+
+/* ==========================================
+   RETURN HOME BUTTON
+   ========================================== */
+
+.hero-button {
+    display: inline-block;
+    background-color: #f4b942;
+    color: #102a43;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.85rem 1.5rem;
+    border-radius: 6px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #0f3d56;
+    color: #ffffff;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+    background-color: #0f3d56;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    color: #ffffff;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+/* ==========================================
+   LARGE SCREEN
+   ========================================== */
+
+@media screen and (min-width: 38rem) {
+
+    .header-top {
+        padding: 1rem 0;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    #primary-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
+
+    #primary-nav a {
+        border-top: none;
+        border-radius: 4px;
+        padding: 0.75rem 1.25rem;
+    }
+
+    .thank-you {
+        padding: 3rem;
+    }
+
+    .thank-you h1 {
+        font-size: 2.8rem;
+    }
+}

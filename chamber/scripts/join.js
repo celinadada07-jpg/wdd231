@@ -1,95 +1,140 @@
-// =========================================
-// PORT HARCOURT CHAMBER - JOIN PAGE
-// =========================================
+// ==========================================
+// PORT HARCOURT CHAMBER OF COMMERCE
+// JOIN PAGE JAVASCRIPT
+// ==========================================
 
-
-// =========================================
-// MOBILE NAVIGATION
-// =========================================
-
+// SELECT ELEMENTS
 const menuButton = document.querySelector("#menu-button");
 const navigation = document.querySelector("#primary-nav");
 
+const currentYear = document.querySelector("#current-year");
+const lastModified = document.querySelector("#last-modified");
+
+const timestamp = document.querySelector("#timestamp");
+const applicationDetails = document.querySelector("#application-details");
+
+
+// ==========================================
+// FOOTER YEAR AND LAST MODIFIED
+// ==========================================
+
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
+
+if (lastModified) {
+    lastModified.textContent = document.lastModified;
+}
+
+
+// ==========================================
+// MOBILE NAVIGATION
+// ==========================================
+
 if (menuButton && navigation) {
+
     menuButton.addEventListener("click", () => {
+
         navigation.classList.toggle("open");
 
         const isOpen = navigation.classList.contains("open");
 
         menuButton.setAttribute("aria-expanded", isOpen);
+
         menuButton.setAttribute(
             "aria-label",
-            isOpen ? "Close navigation menu" : "Open navigation menu"
+            isOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
         );
+
     });
+
 }
 
 
-// =========================================
-// CURRENT DATE AND TIME
-// =========================================
-
-const timestamp = document.querySelector("#timestamp");
+// ==========================================
+// FORM TIMESTAMP
+// ==========================================
 
 if (timestamp) {
     timestamp.value = new Date().toISOString();
 }
 
 
-// =========================================
-// MEMBERSHIP MODALS
-// =========================================
+// ==========================================
+// DISPLAY FORM INFORMATION
+// ==========================================
 
-const modalButtons = document.querySelectorAll(".modal-button");
-const closeButtons = document.querySelectorAll(".close-modal");
+if (applicationDetails) {
 
+    const params = new URLSearchParams(window.location.search);
 
-// Open the correct modal
-modalButtons.forEach((button) => {
+    const firstName = params.get("firstName");
+    const lastName = params.get("lastName");
+    const email = params.get("email");
+    const phone = params.get("phone");
+    const organization = params.get("organization");
+    const organizationTitle = params.get("organizationTitle");
+    const membership = params.get("membership");
+    const description = params.get("description");
+    const submittedTime = params.get("timestamp");
 
-    button.addEventListener("click", () => {
+    let membershipName = membership;
 
-        const modalId = button.dataset.modal;
-        const modal = document.querySelector(`#${modalId}`);
+    if (membership === "np") {
+        membershipName = "NP Membership";
+    } else if (membership === "bronze") {
+        membershipName = "Bronze Membership";
+    } else if (membership === "silver") {
+        membershipName = "Silver Membership";
+    } else if (membership === "gold") {
+        membershipName = "Gold Membership";
+    }
 
-        if (modal) {
-            modal.showModal();
-        }
+    applicationDetails.innerHTML = `
+        <h2>Application Details</h2>
 
-    });
+        <p>
+            <strong>Name:</strong>
+            ${firstName || ""} ${lastName || ""}
+        </p>
 
-});
+        <p>
+            <strong>Email:</strong>
+            ${email || ""}
+        </p>
 
+        <p>
+            <strong>Phone:</strong>
+            ${phone || ""}
+        </p>
 
-// Close modal buttons
-closeButtons.forEach((button) => {
+        <p>
+            <strong>Organization:</strong>
+            ${organization || ""}
+        </p>
 
-    button.addEventListener("click", () => {
+        <p>
+            <strong>Organizational Title:</strong>
+            ${organizationTitle || ""}
+        </p>
 
-        const modal = button.closest("dialog");
+        <p>
+            <strong>Membership Level:</strong>
+            ${membershipName || ""}
+        </p>
 
-        if (modal) {
-            modal.close();
-        }
+        <p>
+            <strong>Business Description:</strong>
+            ${description || ""}
+        </p>
 
-    });
-
-});
-
-
-// =========================================
-// CLOSE MODAL WHEN CLICKING OUTSIDE
-// =========================================
-
-document.querySelectorAll("dialog").forEach((modal) => {
-
-    modal.addEventListener("click", (event) => {
-
-        if (event.target === modal) {
-            modal.close();
-        }
-
-    });
-
-});
-
+        <p>
+            <strong>Application Submitted:</strong>
+            ${submittedTime
+                ? new Date(submittedTime).toLocaleString()
+                : "Not available"}
+        </p>
+    `;
+}

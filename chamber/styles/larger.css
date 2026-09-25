@@ -141,3 +141,143 @@
         font-size: 2.8rem;
     }
 }
+
+/* ==========================================
+   HOME PAGE - LARGE SCREEN STYLES
+   ========================================== */
+
+@media screen and (min-width: 38rem) {
+
+    /* HERO */
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero img {
+        height: 500px;
+    }
+
+    .hero-content {
+        padding: 3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.15rem;
+    }
+
+
+    /* EVENTS */
+
+    .events-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .event-card {
+        padding: 1.5rem;
+    }
+
+
+    /* WEATHER */
+
+    .weather-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+
+    /* MEMBER SPOTLIGHTS */
+
+    .spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .spotlight-card {
+        padding: 1.5rem;
+    }
+
+}
+
+
+/* ==========================================
+   EXTRA LARGE SCREENS
+   ========================================== */
+
+@media screen and (min-width: 64rem) {
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero img {
+        height: 550px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* ==========================================
+   COMPACT WEATHER - SIDE BY SIDE
+   ========================================== */
+
+@media screen and (min-width: 38rem) {
+
+    .weather-container {
+        display: grid;
+        grid-template-columns: minmax(220px, 0.8fr) minmax(500px, 2fr);
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .weather-card {
+        padding: 1rem;
+    }
+
+    /* Current weather */
+    #current-weather {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    #current-weather img {
+        width: 70px;
+        height: 70px;
+        margin: 0;
+    }
+
+    #current-weather p {
+        margin: 0.25rem 0;
+    }
+
+    /* Three-day forecast */
+    #forecast {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+        margin-top: 0.5rem;
+    }
+
+    .forecast-card {
+        padding: 0.75rem;
+    }
+
+    .forecast-card img {
+        width: 50px;
+        height: 50px;
+    }
+}
